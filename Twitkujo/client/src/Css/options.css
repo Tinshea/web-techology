@@ -1,0 +1,303 @@
+.options-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-grow: 1;
+
+    height: 92vh;
+    /* width: 98.5%; */
+
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: flex-start;
+
+    margin: 1.5em 1em 0 1em;
+    z-index: 10;
+    gap: 2em;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.options-container::-webkit-scrollbar {
+    display: none;
+}
+
+.options-menu-container {
+    display: flex;
+    flex-basis: 15%;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 2em;
+    order: 0;
+    background-color: var(--background-color);
+    align-items: center;
+}
+
+.options-menu-element {
+    margin: 1em;
+    width: 100%;
+    align-self: center;
+}
+
+.options-menu-buttons {
+    width: 100%;
+    font-size: large;
+    text-align: left;
+    background: transparent;
+    color: var(--subtitle-color);
+    border: none;
+    outline: none;
+}
+.options-menu-buttons:hover {
+    cursor: pointer;
+    filter: var(--brightness-filter-buttons);
+}
+#logout{
+    color: red;
+}
+
+.options-settings-container {
+    display: flex;
+    flex-grow: 1;
+    flex-basis: auto;
+    align-self: stretch;
+    background-color: var(--background-color);
+    height: auto;
+    padding: 1em;
+    overflow: hidden;
+}
+
+.noSettings {
+    align-self: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    flex-grow: 1;
+    color: var(--title-color);
+}
+
+.Settings {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1em 3em 1em 3em;
+    flex-grow: 1;
+    background-color: var(--background-color);
+    color: #d7dadc;
+
+    overflow-x: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.Settings::-webkit-scrollbar {
+    display: none;
+}
+
+.Settings-title {
+    align-self: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+.Settings-descriptor {
+    font-style: italic;
+    color: var(--subtitle-color);
+    text-align: center;
+}
+
+.themeSettings-container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    flex-grow: 1;
+}
+
+.themeSwitch {
+    margin: 1em 0 1em;
+}
+
+/* .switch {
+    transform: scale(2,2);
+} */
+
+.examples-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    justify-content: space-around;
+    background-color: var(--settings-example-bgcolor);
+    padding-bottom: 1em;
+    color: var(--text-color);
+}
+.example-photo {
+    width: 615px;
+    height: 330px;
+    overflow: hidden;
+    align-self: center;
+}
+.screenshot {
+    position: relative;
+    max-width: 95%;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-52.5%, -50%);
+}
+
+.example-legend {
+    /* background-color: bisque; */
+    flex-grow: 1;
+}
+
+.editSettings-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    flex-grow: 1;
+}
+
+.editSettings-username {
+    display: flex;
+    flex-direction: column;
+}
+.edit-username-form {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.edit-username-input {
+    color: var(--text-color);
+    background: var(--background-color);
+    border: solid var(--input-border-color) 1px;
+    border-radius: 5px;
+    padding: 10px;
+    width: 30%;
+}
+.edit-username-input:focus {
+    border: solid var(--input-active-color) 1px;
+}
+.edit-username-input::placeholder {
+    color: var(--input-text-color);
+}
+
+.editSettings-picture {
+    display: flex;
+    flex-direction: column;
+}
+
+.settingspp-container {
+    border: 2px solid #7b7d7e;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.editSettings-banner {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.edit-pp-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    height: 100%;
+}
+
+.settingsbanner-container {
+    width: 100%;
+    height: 300px;
+    /* background-color: #d7dadc; */
+    /* overflow: hidden; */
+    align-self: stretch;
+}
+#banner {
+    border: solid 2px var(--button-background-color);
+    outline: none;
+    width: 100%;
+    height: 100%;
+}
+
+.editSettings-subtitle {
+    font-size: medium;
+    font-weight: 700;
+    color: var(--subtitle-color);
+}
+.editSettings-subdescriptor {
+    font-size: small;
+    color: var(--text-color);
+    margin-bottom: 1em;
+}
+
+.profilepicForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+.bannerForm {
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.fileInput {
+    color: var(--text-color);
+    background-color: var(--button-background-color);
+    font-size: large;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--input-border-color);
+}
+#faicon {
+    position:relative;
+    transform: translate(-50%, -70%);
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    max-height: 100%;
+}
+.fileInput input {
+    display: none;
+}
+.fileInput:hover {
+    cursor: pointer;
+    filter: var(--brightness-filter-buttons);
+    border: 1px solid var(--input-hover-color);
+}
+
+.fileInput-button {
+    width: fit-content;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    outline: none;
+    border: 1px solid var(--input-border-color);
+}
+.fileInput-button:hover {
+    filter: var(--brightness-filter-buttons);
+    cursor: pointer;
+}
+    
+.margin {
+    margin: 1em 0 1em 0;
+}

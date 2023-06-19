@@ -1,0 +1,57 @@
+.stats-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin: 0.5em;
+    height: min-content;
+}
+
+.stats-container h1 {
+    text-align: center;
+    color: var(--title-color);
+}
+
+.stats-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    margin: 1em;
+}
+
+.stats-info {
+    flex-grow: 1;
+    color: var(--text-color);
+    margin: 0.7em;
+}
+
+.stats-value {
+    width: fit-content;
+    color: var(--text-color);
+    font-weight: 600;
+    margin: 0.7em;
+    align-self: flex-end;
+}
+
+.rank {
+    position: relative;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+
+.stats-loading {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--background-color);
+    /* opacity: 0.2; */
+}

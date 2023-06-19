@@ -1,0 +1,158 @@
+.body-profilepage {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5em;
+    z-index: 10;
+}   
+
+.main-profilepage {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    width: 98%;
+    padding: 1em;
+}
+
+.profilepage-banner-container {
+    display: block;
+    position: relative;
+    flex-basis: 100%;
+    height: 300px;
+    /* background-color: white; */
+    border: 1px solid #7b7d7e;
+    align-self: flex-start;
+    order: 0;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+}
+
+.profilepicture-container {
+    border: 2px solid #7b7d7e;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+#profilepic {
+    position: relative;
+    max-width:100%;
+    max-height:100%;
+    overflow: hidden;
+}
+
+.profile-username {
+    color: var(--title-color);
+    font-weight: 600;
+    font-size: x-large;
+    /* position: absolute; */
+    transform: translate(0, -100px);
+    align-self: center;
+}
+
+.profilepage-statistics-container {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 80%; */
+    flex-basis: 17%;
+    align-self: stretch;
+    order: 1;
+    height: min-content;
+}
+
+.AddOrDeleteOrEdit:hover {
+    cursor: pointer;
+  }
+
+.statistics-container {
+    background-color: var(--background-color);
+    transform: translate(0,-100px);
+    min-height: 80%;
+}
+
+.profilepage-messageList-container {
+    display: block;
+    flex-basis: 60%;
+    align-self: stretch;
+    order: 2;
+    margin-top: 1em;
+    flex-grow: 1;
+
+    overflow-y: hidden;
+}
+
+.profilepage-friendlist {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 15%;
+    align-self: stretch;
+    order: 3;
+    margin-top: 1em;
+    gap: 2em;
+    padding: 1em;
+
+    z-index: 10;
+    align-items: center;
+    overflow: hidden;
+}
+
+.AddOrDeleteOrEdit {
+    height: 60px !important;
+    min-width: 130px;
+    width: fit-content;
+    align-self: center;
+}
+
+.button-profile {
+    position:relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+
+    padding: 5px;
+
+    height: 100%;
+    width: 100%;
+
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+
+.button-profile:hover{
+    cursor:pointer;
+}
+
+.go-to-profile {
+    padding: 5px;
+    gap: 15px;
+    justify-content: center !important;
+}
+.go-to-profile p {
+    font-size: medium;
+}
+
+.banner-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    /* background-color: var(--background-color); */
+    background: transparent;
+    /* opacity: 0.2; */
+}

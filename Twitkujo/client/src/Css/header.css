@@ -1,0 +1,175 @@
+#header-mainpage {
+    align-items: center;
+    background-color: var(--header-background-color);
+    border-bottom: 1px solid var(--decoration-border-color);
+    color: var(--title-color);
+    display: flex;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    height: 60px;
+}
+
+.UserButtoncontainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 50px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 1.5em;
+
+    /* color: aliceblue; */
+}
+
+#logo-searchbar {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    width: 84%;
+}
+
+/* #header-mainpage>img {
+    width: 150px;
+    height: 75px;
+    text-align: center;
+  } */
+
+.logo-container {
+    width: 90px;
+    height: 42px;
+    margin-right: 10em;
+    border: none;
+    cursor: pointer;
+    background-color: var(--header-background-color);
+}
+
+.logo-mainpage {
+    height: 100%;
+}
+
+.headerprofilepicture-container {
+    margin: 10px;
+    border: 1px solid #7b7d7e;
+    border-radius: 100%;
+}
+
+#header-mainpage > nav > ul {
+    list-style-type: none;
+}
+
+#searchbar-mainpage {
+    display: flex;
+    height: 40px;
+    width: 100%;
+
+    /* margin: auto; */
+}
+
+#searchbar-mainpage input {
+    width: 75%;
+    border-radius: 1.25em;
+    border: 1px solid var(--input-border-color);
+    /* box-shadow: 0 0 0.5em rgba(253, 253, 253, 0.25); */
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+    padding-left: 1em;
+}
+
+.searchbar2-mainpage[type="search"]::placeholder {
+    background-image: var(
+        --magnifying-glass
+    ); /* ajoute l'icône de loupe en tant qu'image de fond */
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: var(--input-text-color);
+    outline: none;
+}
+
+.searchbar2-mainpage:hover {
+    border: 1px solid var(--input-hover-color);
+    box-shadow: 0 0 0.5em var(--box-shadow-color);
+}
+
+.searchbar2-mainpage:focus {
+    border: 1px solid var(--input-active-color);
+}
+
+#links-auth {
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin-right: 1em;
+}
+
+#links-mainpage {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    padding-right: 5em;
+    padding-left: 2em;
+}
+
+#links-mainpage > li {
+    cursor: pointer;
+}
+
+#links-mainpage > li:hover,
+#links-auth > li:hover {
+    filter: var(--brightness-filter-icons);
+}
+
+#links-auth > li > a {
+    border: 2px solid rgb(140, 107, 203);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    text-decoration: none;
+}
+
+#username-profilepic {
+    contain: content;
+    display: flex;
+    height: auto;
+}
+
+.a-mainpage {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--icon-color);
+}
+
+#online-username {
+    color: var(--title-color);
+}
+
+.switch-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    align-self: flex-end;
+    margin-right: 1em;
+}
+.switch-icons{
+    position: absolute;
+    top: -15px;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track{
+    background-color: white !important;    
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked {
+   color: white !important;
+}

@@ -1,0 +1,109 @@
+.article-List {
+    background: var(--background-color);
+    width: auto;
+    margin-left: 1.5em;
+    color: var(--title-color);
+    contain: content;
+    padding: 0em 1em 0.5em 0em;
+}
+
+.article-profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    
+    position: relative;
+    overflow: hidden;
+    z-index: 10;
+    top: 46px;
+}
+
+.article-profile-username {
+    color: var(--title-color);
+    font-size: large;
+    margin: 0px 0px 50px -4px;
+}
+
+/* ARTICLE BORDER (+ BOXSHADOW) */
+.lightborder {
+    border: 1px solid var(--input-border-color);
+    border-radius: 10px;
+}
+.lightborder:hover {
+    border: 1px solid var(--input-hover-color);
+    box-shadow: 0 0 0.5em var(--box-shadow-color);
+}
+
+.profilepic-border {
+    border: 1px solid #7b7d7e;
+}
+
+.username {
+    color: var(--subtitle-color);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.username:hover {
+    text-decoration: underline;
+}
+
+.brad {
+    border-radius: 10px;
+}
+
+.centered {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.adddelete-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    color: #fff;
+    font-size: medium;
+    height: 100%;
+    width: 100%;
+    gap: 15px;
+}
+
+.adddelete-button p{
+    background-color: transparent;
+    font-size: 100%;
+}
+
+.loading-screen {
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1em;
+    height: 100%;
+}
+
+.loading-circle {
+    width: 50px; /* Adjust the size of the circle */
+    height: 50px; /* Adjust the size of the circle */
+    border-radius: 50%;
+    border: 3px solid #292955; /* Adjust the color and thickness of the border */
+    border-top-color: transparent;
+    animation: spin 1s linear infinite;
+}
+  
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

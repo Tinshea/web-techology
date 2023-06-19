@@ -1,0 +1,128 @@
+.body-mainpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-top: 1.5em;
+    padding: 0;
+    z-index: 10;
+    overflow: hidden;
+}
+
+.container-mainpage {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 81%;
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.main-mainpage {
+    display: block;
+    flex-basis: auto;
+    align-self: auto;
+    flex-grow: 1;
+    height: 100%;
+
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.main-mainpage::-webkit-scrollbar {
+    display: none;
+}
+
+.filters-mainpage {
+    display: block;
+    align-self: auto;
+    flex-basis: 15%;
+    flex-shrink: 0;
+    padding: 2em;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 1.5em;
+    height: fit-content;
+    position: relative;
+}
+.filters-mainpage h2
+{
+    margin: 0;
+}
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 2em;
+}
+.filters input {
+    display: none;
+}
+.filter-buttons {
+    text-align: start;
+    font-size: large;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    transition: transform 0.2s;
+    width: fit-content;
+}
+.filter-buttons:hover {
+    /* transform: scale(1.1) translate(10%,0); */
+    cursor: pointer;
+    /* background: var(--button-background-hover); */
+}
+
+.filters-loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    flex-grow: 1;
+    background-color: var(--background-color);
+    /* opacity: 0.2; */
+}
+
+
+.friendlist-mainpage {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    padding: 10px;
+    margin: 1em 1.5em 1em 1.5em;
+    background-color: var(--background-color);
+    color: var(--subtitle-color);
+    flex-grow: 1;
+    height: 50%;
+    overflow: hidden;
+}
+
+.profil-picture-load {
+    width: 64px;
+    height: 64px;
+}
+
+.active {
+    transform: scale(1.2) translate(15%,0);
+}
+
+.cacaca{
+    visibility: hidden;
+}

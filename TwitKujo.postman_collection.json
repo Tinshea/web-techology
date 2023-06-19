@@ -1,0 +1,516 @@
+{
+	"info": {
+		"_postman_id": "0e359c89-1d61-40a5-91b4-2e1f779d4bff",
+		"name": "TwitKujo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25467419",
+		"_collection_link": "https://interstellar-crescent-176473.postman.co/workspace/Team-Workspace~ea56f7e3-0c0a-4f0c-8f76-f4bf523e78d2/collection/25467565-0e359c89-1d61-40a5-91b4-2e1f779d4bff?action=share&creator=25467419&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Statistique",
+			"item": [
+				{
+					"name": "GetUserStat",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/stats/GetuserStat?userID=\"1681861967598\"",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"stats",
+								"GetuserStat"
+							],
+							"query": [
+								{
+									"key": "userID",
+									"value": "\"1681861967598\""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Filter",
+			"item": [
+				{
+					"name": "FilterMessage",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "FilterByUserId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/filter/FilterByUserId?filterUserId=[1682069107271, 1681861967598]",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"filter",
+								"FilterByUserId"
+							],
+							"query": [
+								{
+									"key": "filterUserId",
+									"value": "[1682069107271, 1681861967598]"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mylikes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "mostLikes",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Friends",
+			"item": [
+				{
+					"name": "AddFriends",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"userID\":1681861967598,\r\n\"friendID\" : 1681894831282\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Friends/addFriends",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Friends",
+								"addFriends"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RefreshListFriends",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "isFriend",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteFriend",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"UserID\":,\r\n\"friendID\":}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Friends/deletefriend?UserID&friendID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Friends",
+								"deletefriend"
+							],
+							"query": [
+								{
+									"key": "UserID",
+									"value": null
+								},
+								{
+									"key": "friendID",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Image",
+			"item": [
+				{
+					"name": "UploadImage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"image\": \"https://geekbecois.com/wp-content/uploads/2022/12/nier-automata-operation-pearl-harbor-1-1.jpg\",\r\n \"public_id\": \"Id_Test\", \r\n\"type\": \"profilpicture\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/image/uploadimage?image=https://geekbecois.com/wp-content/uploads/2022/12/nier-automata-operation-pearl-harbor-1-1.jpg&public_id=Id_Test&type=profilpicture",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"image",
+								"uploadimage"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": "https://geekbecois.com/wp-content/uploads/2022/12/nier-automata-operation-pearl-harbor-1-1.jpg"
+								},
+								{
+									"key": "public_id",
+									"value": "Id_Test"
+								},
+								{
+									"key": "type",
+									"value": "profilpicture"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Message",
+			"item": [
+				{
+					"name": "Addmessage",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"userId\": \"1681861967598\",\r\n      \"messageID\": \"30/04/2023 00:19\",\r\n      \"content\": newmessage,\r\n      \"Likes\": []\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Message/addMessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Message",
+								"addMessage"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RefreshListMessage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Message/RefreshListMessage?userId=\"undefined\"",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Message",
+								"RefreshListMessage"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "\"undefined\""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddLike",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserID\": 1681861967598,\r\n    \"messageID\": 1682806771423\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Message/addlike",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Message",
+								"addlike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletelike",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"UserID\": 1681861967598,\r\n    \"messageID\": 1682806771423\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Message/deletelike",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Message",
+								"deletelike"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "isLiked",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/Message/isLiked?UserID&messageID",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Message",
+								"isLiked"
+							],
+							"query": [
+								{
+									"key": "UserID",
+									"value": null
+								},
+								{
+									"key": "messageID",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deletemessage",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"User\": 1681861967598, \r\n\"messageID\": \"30/04/2023 00:19\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/Message/deletemessage",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"Message",
+								"deletemessage"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetUser",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "ChangeTheme",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\": \"1681861967598\", \r\n\"theme\": \"default\" }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user/changetheme?theme=default&id=1681861967598",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"changetheme"
+							],
+							"query": [
+								{
+									"key": "theme",
+									"value": "default"
+								},
+								{
+									"key": "id",
+									"value": "1681861967598"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ChangeUsername",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n      \"newUsername\": \"Guts\",\r\n      \"username\": \"Guts\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/user/changeusername",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"user",
+								"changeusername"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Form",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

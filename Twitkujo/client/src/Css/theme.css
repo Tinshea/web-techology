@@ -1,0 +1,85 @@
+/* DARK THEME */
+:root, :root[theme='default']{
+    --background-img: url("../ressources/darkthemebg.png");
+    /* --background-img: url("../ressources/lightthemebg2.jpg"); */
+
+    --background: rgb(2,0,36);
+    --background-bubbles: rgb(146 71 69);
+    --background-bubbles-nth: rgb(69 71 146);
+
+    --title-color: #f7f7f7;
+    --subtitle-color: #e4e6e7;
+    --text-color: #d7dadc;
+
+    --icon-color: #d8d8d8;
+  
+    --border-color: #cccccc;
+    --background-color: #1a1a1b;
+    --header-background-color: #030303;
+  
+    --input-border-color: #7b7d7e;
+    --input-hover-color: #e7e7e8;
+    --input-text-color: #929292;
+    --input-background-color: #1a1a1b;
+    --input-active-color: #ffffff;
+    --box-shadow-color: #cbced0;
+
+    --button-background-color: #313132;
+    --button-background-hover: #494747;
+
+    --settings-example-bgcolor: #3b39395d;
+  
+    --decoration-border-color: #f0f8ff;
+
+    --magnifying-glass: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath d='M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z' fill='%23ffffff'%3E%3C/path%3E%3C/svg%3E");
+    --brightness-filter-icons: brightness(75%);
+    --brightness-filter-buttons: brightness(75%);
+
+    --gradient1: #1e272e;
+    --gradient2: #1d1a33;
+
+    --button-before: #434343;
+    --button-after: #292929;
+  }
+  /* LIGHT THEME */
+:root[theme='light']{
+    --background-img: url("../ressources/lightthemebg.png");
+
+    --background: #dae0e6;
+    --background-bubbles: rgb(135, 177, 164);
+    --background-bubbles-nth: rgb(175, 65, 65);
+
+    --title-color: #1a1a1b;
+    --subtitle-color: #222222;
+    --text-color: #1c1c1c;
+
+    --icon-color: #474747;
+    
+    --border-color: #cccccc;
+    --background-color: #f8f9fa;
+    --header-background-color: #ffffff;
+  
+    --input-border-color: #8d8d8d91;
+    --input-hover-color: #6e6e6e;
+    --input-active-color: #017ad3;
+    --input-background-color: #e8e8e8;
+    --input-text-color: #757575;
+    --box-shadow-color: #cbced0;
+
+    --button-background-color: #e8e8e8;
+    --button-background-hover: #827b7b;
+
+    --settings-example-bgcolor: #dae0e6;
+  
+    --decoration-border-color: #030303;
+
+    --magnifying-glass: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --%3E%3Cpath d='M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z'/%3E%3C/svg%3E");
+    --brightness-filter-icons: brightness(150%);
+    --brightness-filter-buttons: brightness(150%);
+
+    --gradient1: #cfdacd;
+    --gradient2: #d4dee9;
+
+    --button-before: #e0e0e0;
+    --button-after: #cacaca;
+  }

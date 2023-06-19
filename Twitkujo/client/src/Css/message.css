@@ -1,0 +1,197 @@
+/* Styles pour la liste des messages sans message */
+.Nomess-p-MessageList {
+    position: relative;
+    text-align: center;
+    font-size: xx-large;
+    text-shadow: 0 0 4em #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    color: var(--title-color);
+}
+
+.blur-filter {
+    animation-name: unblur;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+@keyframes unblur {
+    from {
+        filter: blur(6px);
+    }
+    to {
+        filter: blur(0);
+    }
+}
+
+.p-MessageList {
+    /* padding: 20px; */
+    min-height: 30px;
+    /* background-color: white; */
+}
+
+.p-MessageList {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    height: auto;
+    max-height: 350px;
+    /* left: 10%; */
+    margin: 1em;
+    padding: 10px 0px 0px 40px;
+}
+
+/* Styles pour chaque message de la liste */
+.username-time {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.5em;
+    color: var(--title-color);
+}
+
+.Profil-picture {
+    /* width: 100px;
+    height: 100px; */
+    border: 2px solid #7b7d7e;
+    border-radius: 75px;
+}
+
+h3 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--subtitle-color);
+}
+
+.message-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 11px;
+}
+
+.time-like {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.time {
+    font-size: smaller;
+    font-weight: 100;
+    color: #7b7d7e;
+}
+
+.trash {
+    margin-left: 96%;
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: medium;
+    margin-top: 10px;
+}
+
+.footericon {
+    color: var(--text-color);
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: medium;
+}
+
+/* Styles pour le bouton d'ajout de message */
+.AddMessage {
+    height: auto;
+}
+
+.AddMessage-form {
+    text-align: center;
+    height: auto;
+}
+
+.section-mainpage {
+    border-radius: 10px;
+    margin: 1em 1em 1em 1em;
+    padding: 1em;
+    /* background: linear-gradient(0deg, var(--gradient1), var(--gradient2)); */
+    background-color: var(--header-background-color);
+}
+
+.AddMessage-top {
+    padding: 0.5em;
+    background-color: var(--header-background-color);
+    border-bottom: 2px solid var(--decoration-border-color);
+    border-radius: 10px;
+    /* justify-content: space-around; */
+}
+
+.AddMessage-input {
+    background-color: var(--input-background-color);
+    width: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    min-height: 30px;
+    height: auto;
+    border-radius: 1em 0em 0em 1em;
+    color: var(--input-text-color);
+    border: 1px solid var(--input-border-color);
+    padding-left: 1em;
+    font-weight: bold;
+    border-right: none;
+}
+
+.AddMessage-input:hover {
+    border: 1px solid var(--input-hover-color);
+    box-shadow: 0 0 0.5em var(--box-shadow-color);
+}
+
+.AddMessage-input::placeholder {
+    color: #7b7d7e;
+}
+
+.SendButton {
+    border-radius: 0 1rem 1rem 0;
+    overflow: hidden;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    border: solid 1px var(--input-border-color);
+    outline: none;
+}
+
+.SendButton:hover {
+    cursor: pointer;
+    border: var(--input-hover-color);
+}
+
+.skeleton-message{
+    position: relative;
+}
+
+.skeleton-pp{
+    position: absolute;
+    margin:1em 0 0 2em;
+}
+
+.skeleton-text{
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    top: 45%;
+    left: 5%;
+    gap: 1em;
+}
